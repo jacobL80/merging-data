@@ -37,9 +37,9 @@
 
             <section>
                 <ul class="cards">
-                    <li class="card" ng-repeat="employee in employees | filter:searchString | orderBy:sortCol">
+                    <li class="card" ng-repeat="employee in employees | filter: searchString | orderBy: sortCol">
                         <!-- this img should show the employee picture --> 
-                        <img alt="Picture of {{::employee.firstName}} {{::employee.lastName}}"  ng-src={{employee.picUrl}}>
+                        <img title="Picture of {{::employee.firstName}} {{::employee.lastName}}"  alt="Picture of {{::employee.firstName}} {{::employee.lastName}}"  ng-src={{employee.picUrl}}>
                         <div class="details">
                             <h2 class="name"> {{employee.firstName}} {{employee.lastName}} </h2>
                             <p class="title"> {{employee.title}} </p>
