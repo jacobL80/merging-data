@@ -10,8 +10,9 @@
 
 angular.module('AddressBook', [])
     .controller('AddressController', function($scope) {
-        $scope.employees = pawneeEmployees;
         $scope.sortCol = 'lastName';
+        $scope.employees = pawneeEmployees;
+        
         $scope.sortBy = function(sortCol) {
             $scope.sortCol= sortCol;
         };
