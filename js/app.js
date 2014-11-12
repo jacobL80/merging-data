@@ -9,11 +9,8 @@
 "use strict";
 
 angular.module('AddressBook', [])
-    .controller('AddressController', function($scope) {
+    .controller('AddressController', ['$scope', function($scope) {
         $scope.sortCol = 'lastName';
         $scope.employees = pawneeEmployees;
-        
-        $scope.sortBy = function(sortCol) {
-            $scope.sortCol= sortCol;
-        };
-    });
+        var reverse = false;
+    }]);
